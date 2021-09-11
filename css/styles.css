@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fefbf3;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.931);
+}
+a:visited {
+  text-decoration: none;
+}
+
+/* Styling the whole content div */
+
+.container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  row-gap: 3%;
+  grid-template-areas:
+    "hd hd"
+    "bt bt"
+    "mn sd"
+    "ft ft";
+}
+
+/*Giving the header the perfect position*/
+
+header {
+  grid-area: hd;
+  display: flex;
+  justify-content: space-between;
+  background-color: #290fbade;
+  border-radius: 0 0 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Styling the logo image */
+
+#logo {
+  width: 70px;
+}
+#logo:hover {
+  cursor: pointer;
+}
+
+/*Styling The Navbar menu list*/
+
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin: 15px;
+}
+li a {
+  color: #f8f0df;
+  transition: transform 10ms;
+}
+li:hover {
+  transform: scale(1.3);
+  text-decoration: underline;
+}
+
+/*This hidden menu for the small screen sizes*/
+
+.hidden-menu {
+  display: none;
+  color: #f8f0df;
+
+  margin: 15px 15px;
+  float: right;
+}
+.hidden-menu a {
+  color: #f8f0df;
+}
+.hidden-menu:hover {
+  cursor: pointer;
+}
+
+/*The Page Title section*/
+
+.page-title {
+  padding: 10px;
+  grid-area: bt;
+  border-radius: 20px;
+  margin: 0 5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  color: rgb(53, 53, 53);
+}
+
+/* Main Content Section*/
+
+main {
+  grid-area: mn;
+  border-radius: 20px;
+  padding: 5%;
+  margin: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.content-title {
+  text-align: center;
+  margin-bottom: 5%;
+  border-bottom: 2px solid gray;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* The Posts cards in the main page */
+
+.postcard {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  font-size: medium;
+  font-weight: lighter;
+  transition: transform 0.5s;
+}
+.postcard img {
+  height: 50%;
+}
+.post-describtion {
+  overflow: hidden;
+  padding: 10px;
+  font-size: small;
+}
+.post-describtion p {
+  margin-top: 10px;
+}
+.postcard:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Styling the sidebar */
+
+aside {
+  font-size: large;
+  grid-area: sd;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 9%;
+  height: fit-content;
+}
+aside h2 {
+  text-align: center;
+  margin: 5%;
+  background-color: #8236cb;
+  color: #f8f0df;
+  border-radius: 10px 10px;
+}
+
+/* The content inside the side bar */
+
+.card {
+  margin: 5%;
+  padding: 10px;
+  font-size: smaller;
+  border-bottom: 1px solid gray;
+}
+.card p {
+  margin-top: 5%;
+  color: rgba(41, 41, 41, 0.746);
+}
+.card:last-child {
+  margin-bottom: 20%;
+}
+
+/* The Main Content inside the posts page */
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.post-img {
+  width: 100%;
+  border-radius: 3%;
+}
+.post-content div {
+  margin-top: 10%;
+}
+.post {
+  font-size: large;
+  line-height: 1.6;
+}
+
+/* The Footer Styles*/
+
+footer {
+  height: 10vh;
+  grid-area: ft;
+  background-color: #150050;
+  text-align: center;
+  color: #f8f0df;
+  font-weight: lighter;
+  font-size: smaller;
+}
+footer span {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Responsive Design for the screens between 611px - 950px*/
+
+@media (min-width: 611px) and (max-width: 950px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "hd"
+      "bt"
+      "mn"
+      "sd"
+      "ft";
+  }
+
+  aside {
+    width: 90%;
+    margin: 5% auto;
+  }
+}
+
+/* Responsive Design for the screens Less than 611px */
+
+@media (max-width: 610px) {
+  .menu {
+    display: none;
+  }
+  .hidden-menu {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "hd"
+      "bt"
+      "mn"
+      "sd"
+      "ft";
+  }
+  .page-title {
+    font-size: small;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .postcard,
+  aside {
+    width: 90%;
+    margin: 5% auto;
+  }
+}
