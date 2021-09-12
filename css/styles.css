@@ -141,10 +141,24 @@ main {
   margin-top: 10px;
 }
 .postcard:hover {
-  cursor: pointer;
   transform: scale(1.1);
 }
-
+.ReadBtnDiv {
+  text-align: center;
+}
+.ReadBtn {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 8px -40px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #2a1ed0 100%);
+  background-color: #3d40f6;
+  border-radius: 18px;
+  border: 1px solid #1e5bb1;
+  color: #ffffff;
+  font-style: italic;
+  padding: 7px 25px;
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 0px #cd1552;
+}
 /* Styling the sidebar */
 
 aside {
@@ -197,7 +211,47 @@ aside h2 {
   font-size: large;
   line-height: 1.6;
 }
+.Author-title {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 5%;
+}
 
+.author {
+  display: flex;
+  text-align: center;
+}
+.avatar {
+  width: 30%;
+}
+.avatar img {
+  width: 90%;
+  border-radius: 50%;
+}
+.authorInfo {
+  width: 70%;
+  padding: 10%;
+}
+.author-bio {
+  font-size: medium;
+  margin: 5% 1%;
+}
+.socialmedia {
+  text-align: center;
+
+  width: 50%;
+  margin: auto;
+}
+.fa {
+  text-shadow: rgba(0, 0, 0, 0.473) 0px 4px 8px;
+  color: #3d94f6;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 /* The Footer Styles*/
 
 footer {
@@ -216,7 +270,7 @@ footer span {
 
 /* Responsive Design for the screens between 611px - 950px*/
 
-@media (min-width: 611px) and (max-width: 950px) {
+@media (min-width: 667px) and (max-width: 1028px) {
   .container {
     width: 100%;
     grid-template-columns: 100%;
@@ -232,11 +286,15 @@ footer span {
     width: 90%;
     margin: 5% auto;
   }
+  article {
+    margin: 10px 0;
+    font-size: smaller;
+  }
 }
 
-/* Responsive Design for the screens Less than 611px */
+/* Responsive Design for the screens Less than 666px */
 
-@media (max-width: 610px) {
+@media (max-width: 666px) {
   .menu {
     display: none;
   }
@@ -263,5 +321,10 @@ footer span {
   aside {
     width: 90%;
     margin: 5% auto;
+  }
+
+  article {
+    margin: 10px 0;
+    font-size: smaller;
   }
 }
