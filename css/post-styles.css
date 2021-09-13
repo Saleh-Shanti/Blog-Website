@@ -1,0 +1,57 @@
+.post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.post-img {
+  width: 100%;
+  border-radius: 3%;
+}
+.post-content div {
+  margin-top: 10%;
+}
+.post {
+  font-size: large;
+  line-height: 1.6;
+}
+.Author-title {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 5%;
+}
+
+.author {
+  display: flex;
+  text-align: center;
+}
+.avatar {
+  width: 30%;
+}
+.avatar img {
+  width: 90%;
+  border-radius: 50%;
+}
+.authorInfo {
+  width: 70%;
+  padding: 10%;
+}
+.author-bio {
+  font-size: medium;
+  margin: 5% 1%;
+}
+.socialmedia {
+  text-align: center;
+
+  width: 50%;
+  margin: auto;
+}
+.fa {
+  text-shadow: rgba(0, 0, 0, 0.473) 0px 4px 8px;
+  color: #3d94f6;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}

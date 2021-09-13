@@ -1,3 +1,7 @@
+@import url("blog-home-styles.css");
+@import url("post-styles.css");
+@import url("sidebar.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -116,142 +120,8 @@ main {
   justify-content: space-evenly;
 }
 
-/* The Posts cards in the main page */
-
-.postcard {
-  background-color: white;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  font-size: medium;
-  font-weight: lighter;
-  transition: transform 0.5s;
-}
-.postcard img {
-  height: 50%;
-}
-.post-describtion {
-  overflow: hidden;
-  padding: 10px;
-  font-size: small;
-}
-.post-describtion p {
-  margin-top: 10px;
-}
-.postcard:hover {
-  transform: scale(1.1);
-}
-.ReadBtnDiv {
-  text-align: center;
-}
-.ReadBtn {
-  cursor: pointer;
-  box-shadow: inset 1px 1px 8px -40px #97c4fe;
-  background: linear-gradient(to bottom, #3d94f6 5%, #2a1ed0 100%);
-  background-color: #3d40f6;
-  border-radius: 18px;
-  border: 1px solid #1e5bb1;
-  color: #ffffff;
-  font-style: italic;
-  padding: 7px 25px;
-  margin-bottom: 5px;
-  text-shadow: 0px 0px 0px #cd1552;
-}
 /* Styling the sidebar */
 
-aside {
-  font-size: large;
-  grid-area: sd;
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-top: 9%;
-  height: fit-content;
-}
-aside h2 {
-  text-align: center;
-  margin: 5%;
-  background-color: #8236cb;
-  color: #f8f0df;
-  border-radius: 10px 10px;
-}
-
-/* The content inside the side bar */
-
-.card {
-  margin: 5%;
-  padding: 10px;
-  font-size: smaller;
-  border-bottom: 1px solid gray;
-}
-.card p {
-  margin-top: 5%;
-  color: rgba(41, 41, 41, 0.746);
-}
-.card:last-child {
-  margin-bottom: 20%;
-}
-
-/* The Main Content inside the posts page */
-
-.post-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.post-img {
-  width: 100%;
-  border-radius: 3%;
-}
-.post-content div {
-  margin-top: 10%;
-}
-.post {
-  font-size: large;
-  line-height: 1.6;
-}
-.Author-title {
-  text-align: center;
-  border-bottom: 1px solid gray;
-  margin: 5%;
-}
-
-.author {
-  display: flex;
-  text-align: center;
-}
-.avatar {
-  width: 30%;
-}
-.avatar img {
-  width: 90%;
-  border-radius: 50%;
-}
-.authorInfo {
-  width: 70%;
-  padding: 10%;
-}
-.author-bio {
-  font-size: medium;
-  margin: 5% 1%;
-}
-.socialmedia {
-  text-align: center;
-
-  width: 50%;
-  margin: auto;
-}
-.fa {
-  text-shadow: rgba(0, 0, 0, 0.473) 0px 4px 8px;
-  color: #3d94f6;
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
 /* The Footer Styles*/
 
 footer {
@@ -267,8 +137,6 @@ footer span {
   display: block;
   margin-top: 20px;
 }
-
-/* Responsive Design for the screens between 611px - 950px*/
 
 @media (min-width: 667px) and (max-width: 1028px) {
   .container {

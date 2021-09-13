@@ -1,0 +1,31 @@
+aside {
+  font-size: large;
+  grid-area: sd;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 9%;
+  height: fit-content;
+}
+aside h2 {
+  text-align: center;
+  margin: 5%;
+  background-color: #8236cb;
+  color: #f8f0df;
+  border-radius: 10px 10px;
+}
+
+/* The content inside the side bar */
+
+.card {
+  margin: 5%;
+  padding: 10px;
+  font-size: smaller;
+  border-bottom: 1px solid gray;
+}
+.card p {
+  margin-top: 5%;
+  color: rgba(41, 41, 41, 0.746);
+}
+.card:last-child {
+  margin-bottom: 20%;
+}

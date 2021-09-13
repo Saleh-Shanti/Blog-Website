@@ -1,0 +1,41 @@
+.postcard {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  font-size: medium;
+  font-weight: lighter;
+  transition: transform 0.5s;
+}
+.postcard img {
+  height: 50%;
+}
+.post-describtion {
+  overflow: hidden;
+  padding: 10px;
+  font-size: small;
+}
+.post-describtion p {
+  margin-top: 10px;
+}
+.postcard:hover {
+  transform: scale(1.1);
+}
+.ReadBtnDiv {
+  text-align: center;
+}
+.ReadBtn {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 8px -40px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #2a1ed0 100%);
+  background-color: #3d40f6;
+  border-radius: 18px;
+  border: 1px solid #1e5bb1;
+  color: #ffffff;
+  font-style: italic;
+  padding: 7px 25px;
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 0px #cd1552;
+}
